@@ -3,15 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"content="Portfolio of Suvendu Panda, Full Stack Developer specializing in React, Node.js, MongoDB, and modern web applications.">
-    <title>Suvendu Panda | Full Stack Developer Portfolio</title>
-     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <script src="javascript.js"></script>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Portfolio of Suvendu Panda, Full Stack Developer specializing in React, Node.js, MongoDB, and modern web applications.">
+
+    <title>Suvendu Panda | Full Stack Developer Portfolio</title>
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- JS -->
+    <script defer src="javascript.js"></script>
+    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 
 <body>
@@ -21,7 +33,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
         <ul>
 
-            <li class="item"><a href="#mainsec">Home</a></li>
+            <li class="item" id="mainsec"><a href="#mainsec">Home</a></li>
              <li class="item"><a href="#services">Services</a></li>
             <li class="item"><a href="#about">About</a></li>
             <li class="item"><a href="#Expertise">Expertise</a></li>
@@ -32,7 +44,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
         </ul>
 
-        <i class="fa fa-bars"></i>
+        <button class="menu-toggle" aria-label="Open Navigation Menu">
+    <i class="fa fa-bars"></i>
+</button>
 
     </nav>
 
@@ -43,14 +57,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
             <p class="hello">
             FULL STACK DEVELOPER
         </p>
-            <p class="hello">HELLO!
-            <p>
-            <p> I'm <span class="span"> Shuvendu </span>panda .</p>
+            <p class="hello">HELLO!</p>
+            <p>I'm <span class="span">Shuvendu</span> Panda.</p>
             <div class="animation"><span id="typing-animation"></span> <span style="visibility: hidden;">d</span></div>
         </div>
 
         <div class="bg-img-container">
-            <img src="BG2.webp" class="bg-img" alt="Background Image" loading="lazy">
+            <img src="BG2.webp" class="bg-img" alt="Background Image" fetchpriority="high" loading="eager">
         </div>
 
 
@@ -219,7 +232,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         <div class="skillphoto">
 
             <div class="image-border">
-                <img src="skill.webp" alt="About Image" loading="lazy">
+                <img
+  src="skill.webp"
+  alt="About Image"
+  width="560"
+  height="698"
+  loading="lazy"
+>
             </div>
 
         </div>
@@ -375,7 +394,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
                     Professional editing agency website featuring responsive design,
                     SEO optimization, smooth animations, modern UI, and lead generation.
                 </p>
-                <a href="https://deluxeditor.in/" target="_blank" aria-label="Visit Delux Editor Website">
+                <a href="https://deluxeditor.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Delux Editor Website">
                      Visit Delux Editor Website →
                 </a>
             </div>
@@ -393,7 +412,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
             modern design, responsive layouts, portfolio showcases, and
             optimized user experience across all devices.
         </p>
-        <a href="https://mmvideo.in/" target="_blank" aria-label="Visit MM Video Website">
+        <a href="https://mmvideo.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit MM Video Website">
                 Visit MM Video Website →
         </a>
     </div>
@@ -409,7 +428,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
                     Modern business website showcasing web development, software solutions,
                     mobile applications, SEO services, and digital transformation.
                 </p>
-                <a href="https://pckey.in/" target="_blank" aria-label="Visit PCKey Digital Solutions Website">
+                <a href="https://pckey.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit PCKey Digital Solutions Website">
                     Visit PCKey Digital Solutions Website →
                 </a>
             </div>
@@ -424,7 +443,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
                     A full-stack platform for browsing menus, placing orders,
                     and managing restaurant delivery workflow with responsive UI.
                 </p>
-                <a href="https://github.com/suvendupanda21/food_delivery_website" target="_blank" aria-label="View Food Delivery System Code">
+                <a href="https://github.com/suvendupanda21/food_delivery_website" target="_blank" rel="noopener noreferrer" aria-label="View Food Delivery System Code">
                     View Code →
                 </a>
             </div>
@@ -439,7 +458,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
                     Customer relationship management platform with lead tracking,
                     authentication, dashboards, and business workflow automation.
                 </p>
-                <a href="https://github.com/suvendupanda21/CRM1" target="_blank" aria-label="View CRM Dashboard System Code">
+                <a href="https://github.com/suvendupanda21/CRM1" target="_blank" rel="noopener noreferrer" aria-label="View CRM Dashboard System Code">
                     View Code →
                 </a>
             </div>
@@ -454,7 +473,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
                     A sleek streaming platform UI clone featuring responsive layouts,
                     dynamic content sections, and modern frontend design.
                 </p>
-                <a href="https://github.com/suvendupanda21/NETFLIX-clone" target="_blank" aria-label="View Netflix Clone Code">
+                <a href="https://github.com/suvendupanda21/NETFLIX-clone" target="_blank" rel="noopener noreferrer" aria-label="View Netflix Clone Code">
                     View Code →
                 </a>
             </div>
@@ -523,6 +542,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
                 <div class="cntctdiv" data-aos="fade-up">
     <a href="SUVENDU PANDA CV.pdf"
        target="_blank"
+       rel="noopener noreferrer"
        aria-label="Download Resume">
        <i class="fa fa-file"></i>
     </a>
@@ -538,31 +558,31 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
     <ul class="socials">
         <li>
-            <a href="https://www.facebook.com/profile.php?id=100078280365884" target="_blank" aria-label="Facebook Profile">
+            <a href="https://www.facebook.com/profile.php?id=100078280365884" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile">
                 <i class="fa-brands fa-facebook-f"></i>
             </a>
         </li>
 
         <li>
-            <a href="https://twitter.com/panda_subendu08?t=0vt-PkjNtdfPQyTAsoDyRw&s=" target="_blank" aria-label="Twitter Profile">
+            <a href="https://twitter.com/panda_subendu08?t=0vt-PkjNtdfPQyTAsoDyRw&s=" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">
                 <i class="fa-brands fa-x-twitter"></i>
             </a>
         </li>
 
         <li>
-            <a href="https://github.com/suvendupanda21" target="_blank" aria-label="GitHub Profile">
+            <a href="https://github.com/suvendupanda21" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
                 <i class="fa-brands fa-github"></i>
             </a>
         </li>
 
         <li>
-            <a href="https://www.linkedin.com/in/suvendu-panda-0175b5253" target="_blank" aria-label="LinkedIn Profile">
+            <a href="https://www.linkedin.com/in/suvendu-panda-0175b5253" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
         </li>
 
         <li>
-            <a href="https://instagram.com/the_suvendu__official" target="_blank" aria-label="Instagram Profile">
+            <a href="https://instagram.com/the_suvendu__official" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
                 <i class="fa-brands fa-instagram"></i>
             </a>
         </li>
@@ -579,7 +599,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 
 
-  <a href="https://wa.me/919348710327" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/919348710327" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
 </a>
 
@@ -631,10 +651,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-  AOS.init({
-     offset: 100,
-     duration: 1000,
-  });
+document.addEventListener("DOMContentLoaded", () => {
+    AOS.init({
+        offset: 100,
+        duration: 1000
+    });
+});
 </script>
 </body>
 
