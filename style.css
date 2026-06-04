@@ -1,109 +1,144 @@
 *,
 *::before,
 *::after{
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 * {
   margin: 0;
   padding: 0;
 }
 
-body {
-  overflow-x: hidden;
+body{
+    overflow-x:hidden;
+    max-width:100vw;
 }
 
 html{
-  scroll-behavior: smooth;
+    overflow-x:hidden;
 }
 
 /* ================= NAVBAR ================= */
+/* ================= NAVBAR ================= */
 
-#navbar {
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-  background-color: black;
-  height: 50px;
-  padding: 0px 60px;
-  padding-top: 5px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+/* ================= NAVBAR ================= */
+
+#navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#000;
+    height:60px;
+    padding:0 60px;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
-#navbar ul {
-  display: flex;
-  gap: 30px;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+#navbar ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+    margin:0;
+    padding:0;
 }
+
 #navbar ul li a{
-  position: relative;
-  text-decoration: none;
-  color: rgb(233, 237, 240);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 24px;
-  transition: 0.3s ease;
+    position:relative;
+    text-decoration:none;
+    color:#e9edf0;
+    font-family:'Lucida Sans','Lucida Sans Regular',
+    'Lucida Grande','Lucida Sans Unicode',
+    Geneva,Verdana,sans-serif;
+    font-size:24px;
+    transition:.3s ease;
 }
 
 #navbar ul li a::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  width: 0%;
-  height: 3px;
-  border-radius: 20px;
-  background: linear-gradient(90deg, #3b82f6, #60a5fa);
-  transition: 0.35s ease;
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0;
+    height:3px;
+    border-radius:20px;
+    background:linear-gradient(
+        90deg,
+        #3b82f6,
+        #60a5fa
+    );
+    transition:.35s ease;
 }
 
 #navbar ul li a:hover{
-  color: #3b82f6;
+    color:#3b82f6;
 }
 
 #navbar ul li a:hover::after{
-  width: 100%;
+    width:100%;
 }
 
-#navbar .fa.fa-bars {
-  color:#fff;
-  font-size: 24px;
-  display: none;
+/* HAMBURGER */
+
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:0;
+    margin:0;
 }
 
-@media (max-width: 800px) {
-  #navbar {
-    padding: 0px 24px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  #navbar ul {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50px;
-    flex-direction: column;
-    align-items: center;
-    background-color: #000000;
-    z-index: 999;
-    padding: 24px 0px;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transition: all 300ms;
-  }
-
-  #navbar ul li a {
-    color:#f9f9f9;
-    font-size: 18px;
-  }
-
-  #navbar .fa.fa-bars {
-    display: block;
-  }
+.menu-toggle i{
+    color:#fff;
+    font-size:24px;
 }
 
+.menu-toggle:focus,
+.menu-toggle:focus-visible{
+    outline:none;
+    box-shadow:none;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:800px){
+
+    #navbar{
+        padding:0 24px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    #navbar ul{
+        position:absolute;
+        top:60px;
+        left:0;
+        width:100%;
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+
+        background:#000;
+        padding:24px 0;
+
+        clip-path:polygon(
+            0 0,
+            100% 0,
+            100% 0,
+            0 0
+        );
+
+        transition:.3s ease;
+    }
+
+    #navbar ul li a{
+        font-size:18px;
+    }
+}
 /* ================= HERO / MAIN SECTION ================= */
 
 .mainsec {
@@ -124,12 +159,13 @@ html{
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .mainsec .bg-img {
   width: 145%;
   height: 100%;
-  margin-left: -295px;
+  margin-left: -195px;
   object-fit: contain;
   z-index: 1;
 }
@@ -183,6 +219,8 @@ html{
 
   .bg-img-container {
     order: 2;
+    width: 500px;
+    height: 100px;
     display: flex;
     justify-content: center;
     width:auto;
@@ -190,10 +228,10 @@ html{
   }
 
   .mainsec .bg-img {
-    width: 100%;
-    max-width: 320px;
+    
+    max-width: 520px;
     height: auto;
-    margin-left: 0;
+    margin-left: 0px;
   }
 
   .mainsec p {
@@ -221,7 +259,7 @@ html{
   }
 
   .mainsec .bg-img {
-    max-width: 260px;
+    max-width: 390px;
   }
 }
 
@@ -537,12 +575,18 @@ html{
   .about-title{
     font-size: 30px;
   }
+   
+   .section2{
+        padding:20px;
+    }
   .abtdiv{
     height: auto;
     grid-template-columns: 1fr;
-    padding: 36px 24px;
+    
     text-align: center;
     gap: 32px;
+    width:100%;
+    padding:40px 20px;
   }
   .section2 .para{
     font-size: 16px;
